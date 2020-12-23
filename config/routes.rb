@@ -7,4 +7,5 @@ Rails.application.routes.draw do
     root to: 'users/sessions#new'
   end
   resources :items, only: [:index, :show]
+  resources :events, only: [:new]
 end
