@@ -1,0 +1,89 @@
+.wrapper {
+  .formWrap {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    .formAll {
+      display: flex;
+      height: 70px;
+      border: 1px solid lightgray;
+      margin-top: 5px;
+      .formDefault {
+        background-color: #F0F0F0;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__inner {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      .formInput {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        &__inner {
+          margin-left: 20px;
+        }
+        &__select {
+          margin-left: 15px;
+        }
+        &__string {
+          margin-left: 10px;
+        }
+      }
+    }
+    .formAll_description {
+      display: flex;
+      height: 200px;
+      border: 1px solid lightgray;
+      margin-top: 5px;
+      .formDefault {
+        background-color: #F0F0F0;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__inner {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      .formInput {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        &__inner {
+          margin-left: 20px;
+        }
+      }
+    }
+    .form__btn {
+      display: flex;
+      width: 200px;
+      margin: 0 auto;
+      .form__submit {
+        margin: 10px 20px;
+        .submitBtn {
+          width: 200px;
+          height: 120px;
+          background-color: skyblue;
+          border-radius: 10px;
+          border: none;
+        }
+      }
+      .form__cancel {
+        margin: 35px 20px;
+        .cancelBtn {
+          width: 100px;
+          height: 60px;
+          background-color: lightgreen;
+          border-radius: 10px;
+          border: none;
+        }
+      }
+    }
+  }
+}
