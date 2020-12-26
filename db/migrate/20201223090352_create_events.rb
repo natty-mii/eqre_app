@@ -11,7 +11,8 @@ class CreateEvents < ActiveRecord::Migration[6.0]
       t.string :place, null: false
       t.string :manager_name, null: false
       t.string :description
-      t.references :item, null: false, foreign_key: true
+      t.integer :item_id, null: false
+      t.integer :user_id, null: false
       t.timestamps
     end
   end

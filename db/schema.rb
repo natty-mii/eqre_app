@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 2020_12_25_105643) do
     t.string "place", null: false
     t.string "manager_name", null: false
     t.string "description"
-    t.bigint "item_id", null: false
+    t.integer "item_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["item_id"], name: "index_events_on_item_id"
   end
 
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -58,7 +58,6 @@ ActiveRecord::Schema.define(version: 2020_12_25_105643) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "events", "items"
   add_foreign_key "user_events", "events"
   add_foreign_key "user_events", "users"
 end
