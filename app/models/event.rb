@@ -4,5 +4,6 @@ class Event < ApplicationRecord
   belongs_to_active_hash :month
   belongs_to_active_hash :day
 
-  has_many :items
+  belongs_to :user
+  belongs_to :event
 end

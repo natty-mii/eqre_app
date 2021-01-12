@@ -69,38 +69,41 @@
           %th 29
           %th 30
           %th 31
-        - @items.each do |item|
+        - @items.each_with_index do |item, i|
           %tr
-            %th.header
+            %th.eq_name
               = item.name
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
-              %td
+            %td{data:{id:i + 100}}
+              = link_to "予約", new_event_path
+            %td{data:{id:i + 200}}
+              - @events.each do |event|
+                = event.program_name
+            %td{data:{id:i + 300}}
+            %td{data:{id:i + 400}}
+            %td{data:{id:i + 500}}
+            %td{data:{id:i + 600}}
+            %td{data:{id:i + 700}}
+            %td{data:{id:i + 800}}
+            %td{data:{id:i + 900}}
+            %td{data:{id:i + 1000}}
+            %td{data:{id:i + 1100}}
+            %td{data:{id:i + 1200}}
+            %td{data:{id:i + 1300}}
+            %td{data:{id:i + 1400}}
+            %td{data:{id:i + 1500}}
+            %td{data:{id:i + 1600}}
+            %td{data:{id:i + 1700}}
+            %td{data:{id:i + 1800}}
+            %td{data:{id:i + 1900}}
+            %td{data:{id:i + 2000}}
+            %td{data:{id:i + 2100}}
+            %td{data:{id:i + 2200}}
+            %td{data:{id:i + 2300}}
+            %td{data:{id:i + 2400}}
+            %td{data:{id:i + 2500}}
+            %td{data:{id:i + 2600}}
+            %td{data:{id:i + 2700}}
+            %td{data:{id:i + 2800}}
+            %td{data:{id:i + 2900}}
+            %td{data:{id:i + 3000}}
+            %td{data:{id:i + 3100}}

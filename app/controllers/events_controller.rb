@@ -26,7 +26,7 @@ class EventsController < ApplicationController
                   :end_day,
                   :place,
                   :manager_name,
-                  :description).merge(user_id: current_user.id, item_id: 1)
+                  :description).merge(user_id: current_user.id, item_id: 2)
 
   end
 end
